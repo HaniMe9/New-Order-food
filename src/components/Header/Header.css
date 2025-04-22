@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200&display=swap');
+
+/* src/components/Header/Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #deeff2;
+}
+
+.logo img {
+  height: 60px; /* adjust size */
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 30px;
+  color: #d47d03;
+}
+
+.underline {
+  height: 3px;
+  width: 70px;
+  margin: 10px auto 0;
+  background-color: #ff9500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

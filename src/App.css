@@ -1,17 +1,32 @@
+/* src/App.css */
+
 .App {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #deeff2, #a7d8e6);
+  color: #333;
+  min-height: 100vh;
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .logo-side {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 80px;
+    
   }
 }
+
 
 .App-header {
   background-color: #282c34;
